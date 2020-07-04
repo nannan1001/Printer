@@ -38,6 +38,18 @@ SHOW INDEX FROM printerData;
 
 ![Image text](https://github.com/nannan1001/Printer/blob/master/mysql/截屏2020-07-03上午11.59.37.png)
 
+SHOW COLUMNS FROM printerDataReal;
+
+SHOW INDEX FROM printerDataReal;
+
+![Image text](https://github.com/nannan1001/Printer/blob/master/mysql/mySqlPrinterDataReal.png)
+
+SHOW COLUMNS FROM user;
+
+SHOW INDEX FROM user;
+
+![Image text](https://github.com/nannan1001/Printer/blob/master/mysql/mySqluser.png)
+
 参考资料：
 
 https://blog.csdn.net/guai_shu_shu/article/details/56669568
