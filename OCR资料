@@ -1,0 +1,13 @@
+1) 在java上使用tesseract实现ocr，安装+代码（这个比较全面）：baeldung.com/java-ocr-tesseract
+2) tesseract OCR开源数据集：https://github.com/tesseract-ocr/tessdata        ssh:git@github.com:tesseract-ocr/tessdata.git
+3) tesseract 开源代码：https://github.com/tesseract-ocr/tesseract    ssh:git@github.com:tesseract-ocr/tesseract.git
+4) java+Tesseract-OCR实现图片识别: https://blog.csdn.net/anshengsuiyeu/article/details/79130260?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.compare&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.compare
+5) Java使用Tesseract-OCR进行图像中文文字识别: http://bcxw.net/article/528.html
+6) OCR简介：https://zhuanlan.zhihu.com/p/45376274
+
+
+
+
+
+
+
