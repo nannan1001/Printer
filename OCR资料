@@ -53,8 +53,8 @@ https://www.bilibili.com/video/BV18J411t7Y6?from=search&seid=8360862115063139930
 6．	右键项目里的src将其设置为source root
 7．	新建名为OcrDemo的java文件
 8．	复制以下链接里的代码
-https://www.geeksforgeeks.org/tesseract-ocr-with-java-with-examples/
-注意，不要学这里的环境配置
+         https://www.geeksforgeeks.org/tesseract-ocr-with-java-with-examples/
+         注意，不要学这里的环境配置！这里使用的是Eclipse IDE，我们用的是IDEA
 9. 找一张png, jpg或pdf，将代码里“image.jpg”替换成测试图片的路径
 10. run你的项目，然后可以在终端上看到结果
 
