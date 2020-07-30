@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Status</title>
+</head>
+<body>
+    <p th:inline="text"><b style="color: red">Current Indexed:&nbsp</b>[[${currentIndexed}]] / [[${totalDoc}]]</p>
+
+    <p th:inline="text"><b style="color: red">Time for 10000:&nbsp</b>[[${time10000}]]</p>
+    <p th:inline="text"><b style="color: red">Time for 50000:&nbsp</b>[[${time50000}]]</p>
+    <p th:inline="text"><b style="color: red">Time for 100000:&nbsp</b>[[${time100000}]]</p>
+    <p th:inline="text"><b style="color: red">Time for 200000:&nbsp</b>[[${time200000}]]</p>
+    <p th:inline="text"><b style="color: red">Time for 500000:&nbsp</b>[[${time500000}]]</p>
+    <p th:inline="text"><b style="color: red">Time for total:&nbsp</b>[[${timeTotal}]]</p>
+</body>
+</html>

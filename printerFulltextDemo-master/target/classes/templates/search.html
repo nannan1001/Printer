@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+
+    <link rel="stylesheet" href="/static/search.css" type="text/css"/>
+</head>
+<body>
+
+    <div style="overflow: hidden">
+        <div style="float: left">
+            <form id="searchForm" action="/search?" method="get">
+                <input type="text" name="q" placeholder="Query"/>
+                <select name="time">
+                    <option value ="ALL">ALL</option>
+                    <option value ="5 MONTHS">5 MONTHS</option>
+                </select>
+                <input type="submit" value="search!"/>
+            </form>
+        </div>
+
+        <div style="float: left; margin-left: 10px">
+            <div style="float: left">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <input type="submit" value="upload">
+                </form>
+            </div>
+        </div>
+
+        <div style="float: right; margin-top: 0; margin-bottom: 0">
+            <b style="font-size: 13px">Log in as <b th:inline="text" style="font-size: 13px; color: red">[[${session.loginUser}]]</b></b>
+        </div>
+    </div>
+
+    <hr style="height:3px; border:none; border-top:3px solid #555555;" />
+
+    <div style="clear: both" align="center">
+        <div style="padding-bottom: 5px"><b th:inline="text">Total Record Found: [[${totalRecord}]]</b></div>
+        <div>
+            <table class="gridTable">
+                <thead>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                    <th>Print Time</th>
+                    <th>View</th>
+                </thead>
+                <tbody>
+                    <tr th:each="doc : ${documentList}">
+                        <td th:utext="${doc.title}">title</td>
+                        <td th:utext="${doc.content}">content</td>
+                        <td th:utext="${doc.author}">author</td>
+                        <td th:text="${doc.printTime}">printTime</td>
+                        <td><a th:href="'/view?id='+${doc.id}">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="padding-top: 5px" class="pageControl">
+            <a th:href="'/search?q='+${query}+'&page='+${page - 1}"><b>Back</b></a>
+            <a th:href="'/search?q='+${query}+'&page='+${page + 1}"><b>Next</b></a>
+        </div>
+    </div>
+</body>
+</html>

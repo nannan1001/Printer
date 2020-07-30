@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+
+    <link rel="stylesheet" href="/static/login.css" type="text/css"/>
+</head>
+<body>
+    <div id="login_frame">
+
+        <form th:action="@{/login}" method="post">
+            <p><b style="font-size: 24px">User Log in</b></p>
+            <p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+            <p><input type="text" class="text-input" name="username" placeholder="username"/></p>
+            <p><input type="password" class="text-input" name="password" placeholder="password"/></p>
+            <p><input type="submit" value="Log in!"/></p>
+        </form>
+
+    </div>
+</body>
+</html>
