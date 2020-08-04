@@ -1,7 +1,0 @@
-SpringBoot连接sql server数据库（需要账号密码）：
-https://www.bilibili.com/video/BV1YA411v7kx?from=search&seid=14088812215610393189
-https://www.bilibili.com/video/BV1vK4y1C7q9?from=search&seid=14088812215610393189
-
-sql server samples（官方）:
-https://github.com/microsoft/sql-server-samples 
-sample ssh:git@github.com:microsoft/sql-server-samples.git
